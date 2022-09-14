@@ -1,0 +1,22 @@
+.hourly_details{
+    &--temp{
+        padding-top:4rem;
+        
+        &:first-child{
+            .p{
+                color: rgba(128, 128, 128, 0.786);
+            }
+        }
+        .time{
+           // font-size: 2rem;
+            font-weight: 300;
+        }
+        
+        .p{
+            margin:1rem 0;
+        }
+        .p:not(:last-child){
+            border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+        }
+    }
+}

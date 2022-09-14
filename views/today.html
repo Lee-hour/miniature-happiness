@@ -1,0 +1,142 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Today</title>
+</head -->
+        <div onload="fetch_currentWeather()">
+            <section class="">
+                <div class="current__weather">
+                    <div class="current__weather--details">
+                       <div class="row">
+                            <div class="col-1-of-4">
+                                <div class="current__weather--col1">
+                                    <h2 class="green-header">Current weather</h2>
+                                    <!-- <i class="current__weather--icon"></i> -->
+                                    <div id="icon" class="">&nbsp;</div>
+                                    <p class="current__weather--descrp"></p>
+                                </div>
+                            </div>
+                            <div class="col-1-of-4">
+                                <div class="current__weather--col2">
+                                <h1 class="current__weather--temp"></h1>
+                                <p class="current__weather--realfeel"></p>
+                                </div>
+                            </div>
+                            <div class="col-1-of-4">
+                                <div class="current__weather--col3">
+                                    <p class="current__weather--3 sunrise"></p>
+                                    <p class="current__weather--3 sunset"></p>
+                                    <p class="current__weather--3 duration"></p>
+                                </div>
+                            </div>
+                            <div class="col-1-of-4">
+                                <div class="current__weather--col4">
+                                    <h2 class="current__weather--date"></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+        
+            </section>
+    
+            <section class="hourly">
+                <div class="hourly_details">
+                    <div class="row">
+                        <h2 class="green-header h2">hourly</h2>
+                        <div class="">
+                            <div class="col-1-of-6 hourly_details--temp">
+                                <h2 class="h2">TODAY</h2>
+                                <div id="h2icon" class="cloud">&nbsp;</div>
+                                <p class="p p1">Forecast</p>
+                                <p class="p p1">Temp(&#8451;)</p>
+                                <p class="p p1">RealFeel</p>
+                                <p class="p p">Wind(Km/h)</p>
+                            </div>
+        
+                            <div class="col-1-of-6 hourly_details--temp hourly-forecast">
+                                <h2 class="time time-forecast">.</h2>
+                                <div id="icon2" class="">&nbsp;</div>
+                                <p class="p hourly-forecast-weather">.</p>
+                                <p class="p hourly-forecast-temp">.</p>
+                                <p class="p hourly-forecast-feelLike">.</p>
+                                <p class="p hourly-forecast-wind">.</p>
+                            </div>
+    
+                            <div class="col-1-of-6 hourly_details--temp hourly-forecast">
+                                <h2 class="time time-forecast">.</h2>
+                                <div id="icon2" class="">&nbsp;</div>
+                                <p class="p hourly-forecast-weather">.</p>
+                                <p class="p hourly-forecast-temp">.</p>
+                                <p class="p hourly-forecast-feelLike">.</p>
+                                <p class="p hourly-forecast-wind">.</p>
+                            </div>
+        
+                            <div class="col-1-of-6 hourly_details--temp hourly-forecast">
+                                <h2 class="time time-forecast">.</h2>
+                                <div id="icon2" class="">&nbsp;</div>
+                                <p class="p hourly-forecast-weather">.</p>
+                                <p class="p hourly-forecast-temp">.</p>
+                                <p class="p hourly-forecast-feelLike">.</p>
+                                <p class="p hourly-forecast-wind">.</p>
+                            </div>
+    
+                            <div class="col-1-of-6 hourly_details--temp hourly-forecast">
+                                <h2 class="time time-forecast">.</h2>
+                                <div id="icon2" class="">&nbsp;</div>
+                                <p class="p hourly-forecast-weather">.</p>
+                                <p class="p hourly-forecast-temp">.</p>
+                                <p class="p hourly-forecast-feelLike">.</p>
+                                <p class="p hourly-forecast-wind">.</p>
+        
+                            </div>
+        
+                            <div class="col-1-of-6 hourly_details--temp hourly-forecast">
+                                <h2 class="time time-forecast">.</h2>
+                                <div id="icon2" class="">&nbsp;</div>
+                                <p class="p hourly-forecast-weather">.</p>
+                                <p class="p hourly-forecast-temp">.</p>
+                                <p class="p hourly-forecast-feelLike">.</p>
+                                <p class="p hourly-forecast-wind">.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="nearby__places box-shadow">
+                 <div class="nearby__places--details">
+                    <div class="row">
+                        <h2 class="green-header h2">nearby places</h2>
+                        <div class="row--1">
+                            <div class="col-1-of-2">
+                                <p>undefined</p>
+                                <i class="nearby__place--icon"></i>
+                            </div>
+                            <div class="col-1-of-2">
+                                <p>undefined</p>
+                                <i class="nearby__place--icon"></i>
+                            </div>
+                        </div>
+    
+                        <div class="row--2">
+                            <div class="col-1-of-2">
+                                <p>undefined</p>
+                                <i class="nearby__place--icon"></i>
+                            </div>
+                            <div class="col-1-of-2">
+                                <p>undefined</p>
+                                <i class="nearby__place--icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+           </section>
+           <script src="../js/route.js"></script>
+           <script src="../js/current_weather.js"></script>
+           
+        </div>

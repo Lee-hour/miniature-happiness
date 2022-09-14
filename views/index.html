@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Weather forecast</title>
+</head>
+
+<body onload="handleLocation()">
+    <header class="header">
+        <div class="header__top">
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h1 class="header__top--1">My weather</h1>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="header__search">
+                        <input type="text" class="header__search--input"  placeholder="City, province" required>       
+                         <i  onload='handleLocation(document.querySelector(".header__search--input").value)' class="header__search--icon material-icons">search</i>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+
+        <div >
+            <nav class="header__nav">
+                <ul class="header__nav--tab" onclick="route()">
+                    <li class="header__item border_buttom" onclick="fetch_currentWeather()"><a href="/today" class="header__link">Today</a></li>
+                    <li class="header__item " onclick="fetch_fiveDay()"><a href="/5-day-forecast" class="header__link">5-day forecast</a></li>
+              </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+          <div id="main"></div>
+    </main>
+    <footer class="">
+        <div>
+            <div class="footer">
+                <p class="footer__copyright">
+                    Built by <a href="#" class="footer__link">Leang Lyhour</a> for term projects. Group SD FT E13
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/route.js"></script>
+    <!-- <script src="../js/current_weather.js"></script> -->
+
+    <!-- <script src="../js/selected-col.js"></script> -->
+    <script src="../js/tab-highlight.js"></script>
+</body>
+</html>

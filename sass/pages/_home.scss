@@ -1,0 +1,128 @@
+.current__weather{
+     margin:21.5rem auto 7rem;
+     width: 100rem;
+     height: 25vh;
+     border-radius: 1.2rem;
+     box-shadow: -1rem -1rem 2rem rgba(white, 1), 1.3rem 1.3rem 2rem rgba(#c8d0e7, 1);
+     &--details{
+        padding: 2rem 0 3rem 3rem ;
+        text-align: center;
+     }
+     &--col1{
+        font-size: 1.2rem;
+        // h2{
+        //     //text-transform: uppercase;
+        //  //   color: $green;
+        // }
+        p{
+            font-size: 1.7rem;
+        }
+    }
+
+    &--col2{
+        padding-top: 1.5rem;
+        h1{
+            font-size: 4rem;
+            font-weight: 300;
+        }
+    }
+
+    &--col3{
+        transform: translateY(30%);
+        p{
+            font-size: 1.7rem;
+        }
+    }
+
+    &--col4{
+        h2{
+           color: $green;
+        }
+    }
+
+    &::after{
+        width: 100%;
+        background-color: aqua;
+    }
+}
+
+.hourly{
+    width: 100rem;
+    margin:7rem auto;
+    border-radius: 1.2rem;
+    height: 60vh;
+    box-shadow: -1rem -1rem 2rem rgba(white, 1), 1.3rem 1.3rem 2rem rgba(#c8d0e7, 1);
+    &_details{
+        padding: 2rem 0 3rem .9rem ;
+        text-align: center;
+
+        .row{
+          text-align: center;
+            .h2{
+                padding-left: 3rem;
+                text-align: left;
+
+            }
+            
+            .col-1-of-6:not(:last-child){
+                    margin-right:1rem;
+            }
+            #h2icon{
+                // background-image:  linear-gradient(to right, $color-blue-light, $color-blue-dark);
+                 opacity: 0;
+                 visibility: hidden;
+              }
+
+        }
+    }
+}
+
+.nearby__places
+{
+
+    height: 28vh;
+    &--details{
+        padding: 2rem 0 3rem .9rem ;
+        text-align: center;
+        .row{
+            .h2{
+                padding-left:3rem;
+                padding-bottom: 2rem;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.five-day__forecast{
+    height: 43vh;
+    margin:21.5rem auto 0;
+    text-align: center;
+    &--details{
+        padding: 2rem 0 3rem 5rem ;
+
+        .row{
+            max-width: 100%;
+            cursor: pointer;
+            .col-1-of-5:not(:last-child){
+                margin-right: 0;
+                border-right: 2px solid rgba(128, 128, 128, 0.295);
+            }
+        }
+    }
+}
+
+.selected-day__forecast{
+    padding: 2rem;
+    
+    .hourly_details{
+        background-color: rgb(250, 250, 250);
+        #selected_day1{
+            opacity: 0;
+        }
+    }
+}
+
+#main{
+    transition: all 1s;
+}

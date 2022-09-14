@@ -1,0 +1,32 @@
+.error404{
+    text-align: center;
+    height: 80vh;
+    padding: 3rem;
+    position: relative;
+    margin:19rem auto 7rem;
+
+    &_page{
+        height: 100%;
+     //   background-color: rgb(250, 250, 250);
+
+        &--center{
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+
+            h1{
+                font-size: 20rem;
+                letter-spacing: 1rem;
+                color: $color-grey-light;
+                text-shadow: 4px 4px 2px rgba(white, 1), -2px -2px 1.5px rgba(0,0,0, .6);
+             //   text-shadow: -1rem -1rem 0.5rem rgba(white, .5), 1.3rem 1.3rem 2rem rgba(#c8d0e7, 1);
+ 
+            }
+
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
+}

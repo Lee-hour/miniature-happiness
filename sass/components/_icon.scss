@@ -1,0 +1,72 @@
+.rain{
+    background-image: url("/img/icons/icons8-rain.gif");
+    background-size: cover;
+    background-position: center;
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+    border-radius: 10rem;
+    margin-inline: auto;
+}
+
+.cloud{
+    background-image: url("/img/icons/icons8-partly-cloudy-day.gif");
+    background-size: cover;
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+   // border-radius: 5rem;
+   margin-inline: auto;
+}
+
+.sun{
+    background-image: url("/img/icons/icons8-sun.gif");
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    border-radius: 10rem;
+    margin-inline: auto;
+    //transform: translateX(115%);
+}
+
+.ligttning{
+    background-image: url("/img/icons/icons8-cloud-lightning.gif");
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    border-radius: 10rem;
+    margin-inline: auto;
+}
+
+.night{
+    background-image: url("/img/icons/icons8-night.gif");
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    background-position: center;
+    text-align: center;
+   // border-radius: 2rem;
+   margin-inline: auto;
+}
+
+.wind{
+    background-image: url("/img/icons/icons8-wind.gif");
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    border-radius: 10rem;
+    margin-inline: auto;
+}
+
+.haze{
+    background-image: url("/img/icons/icons8-haze.gif");
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    border-radius: 10rem;
+    margin-inline: auto;
+}
