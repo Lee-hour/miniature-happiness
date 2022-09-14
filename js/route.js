@@ -15,7 +15,7 @@ const route = (e) => {
 
 //routing path object
 const routes = {
-    "/views":"/views/index.html",
+    "/views":"/index.html",
     "/today": "/views/today.html",
     "/5-day-forecast": "/views/5days.html",
     "/404":"/views/404.html"
@@ -33,7 +33,7 @@ const handleLocation = async (code) => {
    const page=[];
 
     for(const key in routes) {
-            routes[key]!=='/views/index.html'  &&  await fetch(routes[key])
+            routes[key]!=='/index.html'  &&  await fetch(routes[key])
                                                     .then(data => data.text())
                                                     .then(resp =>{
                                                        // console.log(resp);
@@ -56,7 +56,7 @@ const handleLocation = async (code) => {
     let main = document.getElementById("main");
     let frag = document.createRange().createContextualFragment(page[nav]);
  
-    if(path==="/views/index.html" || path==="/views/"){
+    if(path==="/index.html" || path==="/views/"){
         main.appendChild(frag);
         return;
        // next.pop();
